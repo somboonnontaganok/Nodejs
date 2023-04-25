@@ -1,7 +1,7 @@
 
 const http = require('http')
 const fs = require('fs')
-const port = 8080
+const port = 80
 
 http.createServer(render).listen(port)
 console.log('Server started on port: ' + port)

@@ -9,7 +9,7 @@ console.log('Server started on port: ' + port)
 function render(request, response) {
     let ctype = {'Content-Type':'text/html'}
     
-    //readFile index.html and respond 
+    //Module FS readFile index.html and respond 
     fs.readFile('html/index.html', (error, content) => {
         if (!error) {
             response.writeHead(200, ctype)

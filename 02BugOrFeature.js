@@ -1,11 +1,11 @@
-//Back Up Code 
-var main = function(r) {
-    console.log('Result: ' + r);     
+//main = callback function
+var main = function(arg) {
+    console.log('Result: ' + arg);     
 };
 var queryDatabase = function(callback)  {
     setTimeout(function() {
-        var r = 'Finish QueryDatabase()'
-        callback(r)
+        var result = 'Finish QueryDatabase()'
+        callback(result)
  },2000)
 };
 
